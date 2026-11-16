@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>용팀장 Y01 줄 대조</title>
+<style>
+:root{--bg:#f3f2ee;--card:#fff;--ink:#222b25;--sub:#748074;--line:#e4e8df;--head:#294935;--accent:#2d513c;--add:#fff6dc;--addline:#e9c85c;--drop:#9a6b5b;--chip:#ecf3e6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}
+header{max-width:1500px;margin:auto;padding:36px 32px 20px}
+.eyebrow{font-size:11px;letter-spacing:3px;color:#64836a}
+h1{font-size:28px;letter-spacing:-1px;margin:10px 0 8px}
+header p{font-size:13px;color:var(--sub);line-height:1.8;margin:0}
+.wrap{max-width:1500px;margin:auto;padding:0 32px 60px;display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start}
+.side{position:sticky;top:16px;background:var(--card);border:1px solid #dce2d8;border-radius:13px;padding:18px}
+video{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:#141914;border-radius:10px}
+.meta{font-size:12px;color:var(--sub);line-height:1.7;margin-top:12px}
+.meta b{color:var(--ink)}
+.side a{color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:11px;padding:4px 8px;border-radius:20px;background:var(--chip);color:#4f7050}
+.chip.add{background:var(--add);color:#7a5a00}
+.chip.drop{background:#f6ebe6;color:var(--drop)}
+.tools{display:flex;gap:8px;margin:14px 0 0}
+button{cursor:pointer;background:#fff;border:1px solid #d7dfd5;border-radius:7px;padding:8px 12px;color:#35553c;font:inherit;font-size:12px}
+button:hover{border-color:var(--accent)}
+.table{background:var(--card);border:1px solid #dce2d8;border-radius:13px;overflow:hidden}
+.row{display:grid;grid-template-columns:44px 92px minmax(0,1.1fr) minmax(0,1fr) minmax(0,.7fr);border-top:1px solid var(--line)}
+.row.th{position:sticky;top:0;z-index:2;background:var(--head);color:#fff;border-top:0;font-size:12px;font-weight:700}
+.row.th div{padding:13px 14px}
+.row>div{padding:14px;min-width:0}
+.row+.row>div+div{border-left:1px solid var(--line)}
+.n{font-size:12px;font-weight:750;color:#729171}
+.t{font-size:12px;color:var(--sub)}
+.t button{padding:4px 7px;font-size:11px}
+.ref{font-size:13px;line-height:1.75;cursor:pointer}
+.ref:hover{background:#f7faf4}
+.ko{display:block;font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}
+.mine{font-size:15px;line-height:1.85;word-break:keep-all}
+.mine p{margin:0 0 4px}
+.dropnote{font-size:12px;color:var(--drop);line-height:1.6;margin-top:6px}
+.note{font-size:12px;color:#5f6b5e;line-height:1.7;word-break:keep-all}
+.note .k{display:block;color:#7a5a00}
+.row.add{background:var(--add)}
+.row.add>div:first-child{box-shadow:inset 4px 0 0 var(--addline)}
+.row.playing{background:#eef5ea}
+.row.add.playing{background:#fff0c2}
+footer{max-width:1500px;margin:auto;padding:0 32px 40px;font-size:12px;color:var(--sub);line-height:1.8}
+@media(max-width:900px){
+ .wrap{grid-template-columns:1fr;padding:0 16px 40px}
+ header{padding:24px 16px 14px}
+ .side{position:static;display:grid;grid-template-columns:140px 1fr;gap:14px}
+ .row{grid-template-columns:1fr}
+ .row.th{display:none}
+ .row>div{padding:8px 14px}
+ .row+.row>div+div{border-left:0}
+ .row>div:first-child{padding-top:14px}
+ .row>div:last-child{padding-bottom:14px}
+ footer{padding:0 16px 30px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="eyebrow">YONGTEAM · 1:1 줄 대조 · 시안 1편</div>
+ <h1>[용팀장용 Y01] AI 직원으로 회사 짜는 도구 → 구매대행 AI 직원</h1>
+ <p>레퍼런스 줄을 누르면 왼쪽 영상이 그 시간으로 갑니다. 노란 줄은 레퍼런스에 없는, 새로 넣은 "사업 적용" 구간입니다.</p>
+</header>
+
+<div class="wrap">
+ <aside class="side">
+  <video id="v" controls playsinline preload="metadata" poster="assets/y01.jpg" src="assets/y01.mp4"></video>
+  <div>
+   <div class="meta">
+    <b>@metaengines · 틱톡 · 64.8초</b><br>
+    평소의 149.8배 · 조회 4.5만 · 댓글 600<br>
+    원문: 영어 내레이션 받아쓰기<br>
+    <a href="https://www.tiktok.com/@metaengines/video/7705165677203672328" target="_blank" rel="noopener">원본 게시물 ↗</a>
+   </div>
+   <div class="meta"><b>왜 터졌나</b><br>첫 문장에 "AI 직원 군대" 그림을 바로 주고, 조직도 → 목표 하나 → 대시보드 순으로 실제 돌아가는 화면을 보여 줌. 댓글 키워드 CTA로 댓글 600개.</div>
+   <div class="legend"><span class="chip">대응 줄</span><span class="chip add">새로 넣은 줄</span><span class="chip drop">버린 내용</span></div>
+   <div class="tools"><button id="copy">용팀장 대사만 복사</button></div>
+  </div>
+ </aside>
+
+ <section class="table" id="tbl">
+  <div class="row th"><div>#</div><div>시간</div><div>레퍼런스 원문 · 번역</div><div>용팀장 대사</div><div>화면 · 확인</div></div>
+
+  <div class="row" data-s="0" data-e="6.3"><div class="n">1</div><div class="t"><button>0:00–0:06</button></div>
+   <div class="ref">Every billionaire on earth is panicking because someone just created a GitHub repo that lets you create an army of AI employees.<span class="ko">지구상의 억만장자들이 패닉이에요. 누가 AI 직원 군대를 만드는 깃허브 저장소를 만들었거든요.</span></div>
+   <div class="mine"><p>AI 직원으로 회사 하나를 통째로 짜는 도구가 나왔습니다.</p><div class="dropnote">버림: "억만장자 패닉" 과장</div></div>
+   <div class="note">페이퍼클립 깃허브 첫 화면</div></div>
+
+  <div class="row" data-s="6.3" data-e="9.9"><div class="n">2</div><div class="t"><button>0:06–0:10</button></div>
+   <div class="ref">And it already has more than 100,000 stars. It's called Paperclip AI.<span class="ko">벌써 별이 10만 개가 넘어요. 이름은 Paperclip AI.</span></div>
+   <div class="mine"><p>이름은 페이퍼클립.</p><div class="dropnote">버림: 별 10만 개(확인 전 숫자)</div></div>
+   <div class="note">로고 화면</div></div>
+
+  <div class="row" data-s="9.9" data-e="16.6"><div class="n">3</div><div class="t"><button>0:10–0:17</button></div>
+   <div class="ref">Imagine you want to build your own software company. Normally, you'd need developers, designers, marketers, and someone to manage all of them.<span class="ko">내 소프트웨어 회사를 만든다고 해 보세요. 보통은 개발자, 디자이너, 마케터, 그리고 그들을 관리할 사람이 필요하죠.</span></div>
+   <div class="mine"><p>회사 하나 굴리려면 일할 사람에 관리할 사람까지 필요하죠.</p></div>
+   <div class="note"></div></div>
+
+  <div class="row" data-s="16.6" data-e="26.2"><div class="n">4</div><div class="t"><button>0:17–0:26</button></div>
+   <div class="ref">But with Paperclip, you can create an entire organization of AI agents. One agent becomes your CEO, another becomes your CTO. A few agents work as developers, and another handles marketing.<span class="ko">페이퍼클립으로는 AI 에이전트 조직 하나를 통째로 만들어요. 하나는 대표, 하나는 개발 책임자, 몇은 개발자, 하나는 마케팅.</span></div>
+   <div class="mine"><p>페이퍼클립은 이 조직을 AI로 만듭니다.</p><p>한 명은 대표, 몇 명은 실무자.</p></div>
+   <div class="note">조직도 화면</div></div>
+
+  <div class="row" data-s="26.2" data-e="30.1"><div class="n">5</div><div class="t"><button>0:26–0:30</button></div>
+   <div class="ref">Then you give them one goal. Build and launch an AI note-taking app.<span class="ko">그리고 목표를 하나 줘요. AI 노트 앱을 만들어 출시해라.</span></div>
+   <div class="mine"><p>목표를 하나만 주면 됩니다.</p><div class="dropnote">버림: "AI 노트 앱" 예시</div></div>
+   <div class="note">목표 입력 화면</div></div>
+
+  <div class="row" data-s="30.1" data-e="38.3"><div class="n">6</div><div class="t"><button>0:30–0:38</button></div>
+   <div class="ref">And instead of giving instructions to every agent individually, your AI CEO can break the goal into smaller tasks, assign them to different AI employees, and coordinate their work.<span class="ko">에이전트마다 따로 지시하는 대신, AI 대표가 목표를 작은 일로 쪼개 직원들에게 나눠 주고 조율해요.</span></div>
+   <div class="mine"><p>그러면 대표 AI가 일을 잘게 쪼개서 직원들한테 나눠 줍니다.</p></div>
+   <div class="note">작업 카드가 나뉘는 화면</div></div>
+
+  <div class="row" data-s="38.3" data-e="43.8"><div class="n">7</div><div class="t"><button>0:38–0:44</button></div>
+   <div class="ref">But this is where it gets crazy. These agents can keep working on recurring tasks even when you're not actively chatting with them.<span class="ko">여기서부터가 미쳤어요. 내가 말을 안 걸어도 반복 업무를 계속해요.</span></div>
+   <div class="mine"><p>제가 말을 안 걸어도 반복 업무는 계속 합니다.</p><div class="dropnote">버림: "미쳤다" 과장</div></div>
+   <div class="note"></div></div>
+
+  <div class="row" data-s="43.8" data-e="51" ><div class="n">8</div><div class="t"><button>0:44–0:51</button></div>
+   <div class="ref">And you can monitor everything from one dashboard. Their tasks, their progress, and even how much money each AI employee is spending on tokens.<span class="ko">대시보드 하나에서 전부 봐요. 할 일, 진행 상황, 직원마다 토큰에 돈을 얼마나 쓰는지까지.</span></div>
+   <div class="mine"><p>누가 뭘 하는지, 비용을 얼마나 쓰는지 한 화면에 보입니다.</p><div class="dropnote">버림: 토큰 비용 표 숫자(예시값)</div></div>
+   <div class="note">대시보드 화면</div></div>
+
+  <div class="row" data-s="51" data-e="54.8"><div class="n">9</div><div class="t"><button>0:51–0:55</button></div>
+   <div class="ref">You can set budgets, approve important decisions, and stop agents when needed.<span class="ko">예산을 정하고, 중요한 결정은 승인하고, 필요하면 멈출 수 있어요.</span></div>
+   <div class="mine"><p>중요한 결정은 사람이 승인하고요.</p></div>
+   <div class="note"></div></div>
+
+  <div class="row" data-s="54.8" data-e="61.7"><div class="n">10</div><div class="t"><button>0:55–1:02</button></div>
+   <div class="ref">It works with Claude Code, Codex, OpenClaw, and other AI agents. And the entire platform is free and open source.<span class="ko">클로드코드, 코덱스, 오픈클로 같은 AI와 붙고, 전부 무료 오픈소스예요.</span></div>
+   <div class="mine"><div class="dropnote">대사 없음 · "무료" 단정 버림(레퍼런스 댓글에 반박 있음)</div></div>
+   <div class="note"><span class="k">확인 필요</span>무료 오픈소스 여부, 촬영 전 공식 페이지로 확인</div></div>
+
+  <div class="row add"><div class="n">★</div><div class="t">새로 넣음</div>
+   <div class="ref" style="cursor:default;color:var(--sub)">(레퍼런스에 없음)</div>
+   <div class="mine"><p>이걸 사업에 적용하는 방법도 알려드릴게요.</p><p>제 구매대행 스토어입니다.</p><p>저는 상품 하나에 AI 직원을 여러 명 붙입니다.</p><p>상품명 담당, 옵션 정리 담당, 상세페이지 담당.</p><p>각자 초안을 만들고, 저는 승인만 합니다.</p><p>시키는 게 아니라 확인하는 겁니다.</p><p>AI는 초안을 만들고, 판단은 사람이 합니다.</p></div>
+   <div class="note">용팀장 클로드코드 AI 직원 여러 창이 동시에 작업하는 화면(촬영 가능, 상품·계정 블러)<span class="k">용팀장 확인</span>실제 역할 나눔이 이 셋인지</div></div>
+
+  <div class="row" data-s="61.7" data-e="64.8"><div class="n">11</div><div class="t"><button>1:02–1:05</button></div>
+   <div class="ref">Comment "git", and I'll send you the link and full setup guide.<span class="ko">댓글에 git 남기면 링크랑 세팅 가이드 보내 드릴게요.</span></div>
+   <div class="mine"><p>AI 직원한테 일하는 순서를 가르치는 지침 구조, 아무 댓글이나 남겨 주시면 DM으로 PDF 보내드릴게요.</p></div>
+   <div class="note">얼굴 풀화면<span class="k">확정 2026-11-16</span>인포크 링크의 PDF를 DM으로</div></div>
+ </section>
+</div>
+
+<footer>용팀장 대사 약 467자 · 약 93초(1초≈5자). 레퍼런스 64.8초보다 길어서, 더 줄이면 8번 대시보드 줄을 뺍니다. 전체 1:1 원본: 용팀장 레포 02-planning/ai-explain-to-business-bench_v1.md</footer>
+
+<script>
+const v=document.getElementById('v');
+const rows=[...document.querySelectorAll('.row[data-s]')];
+rows.forEach(r=>{
+ const go=()=>{v.currentTime=parseFloat(r.dataset.s);v.play().catch(()=>{});if(innerWidth<900)v.scrollIntoView({behavior:'smooth',block:'center'});};
+ r.querySelector('.ref').addEventListener('click',go);
+ r.querySelector('.t button').addEventListener('click',go);
+});
+v.addEventListener('timeupdate',()=>{
+ const t=v.currentTime;
+ rows.forEach(r=>r.classList.toggle('playing',t>=parseFloat(r.dataset.s)&&t<parseFloat(r.dataset.e)));
+});
+document.getElementById('copy').addEventListener('click',async e=>{
+ const txt=[...document.querySelectorAll('.mine p')].map(p=>p.textContent).join('\n');
+ try{await navigator.clipboard.writeText(txt);e.target.textContent='복사했어요';}catch(_){e.target.textContent='복사 실패';}
+ setTimeout(()=>e.target.textContent='용팀장 대사만 복사',1600);
+});
+</script>
+</body>
+</html>
