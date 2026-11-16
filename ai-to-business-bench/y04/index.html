@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>용팀장 Y04 줄 대조</title>
+<style>
+:root{--bg:#f3f2ee;--card:#fff;--ink:#222b25;--sub:#748074;--line:#e4e8df;--head:#294935;--accent:#2d513c;--add:#fff6dc;--addline:#e9c85c;--drop:#9a6b5b;--chip:#ecf3e6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}
+header{max-width:1500px;margin:auto;padding:36px 32px 20px}
+.eyebrow{font-size:11px;letter-spacing:3px;color:#64836a}
+h1{font-size:28px;letter-spacing:-1px;margin:10px 0 8px}
+header p{font-size:13px;color:var(--sub);line-height:1.8;margin:0}
+.wrap{max-width:1500px;margin:auto;padding:0 32px 60px;display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start}
+.side{position:sticky;top:16px;background:var(--card);border:1px solid #dce2d8;border-radius:13px;padding:18px}
+video{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:#141914;border-radius:10px}
+.meta{font-size:12px;color:var(--sub);line-height:1.7;margin-top:12px}
+.meta b{color:var(--ink)}
+.side a{color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:11px;padding:4px 8px;border-radius:20px;background:var(--chip);color:#4f7050}
+.chip.add{background:var(--add);color:#7a5a00}
+.chip.drop{background:#f6ebe6;color:var(--drop)}
+.tools{display:flex;gap:8px;margin:14px 0 0}
+button{cursor:pointer;background:#fff;border:1px solid #d7dfd5;border-radius:7px;padding:8px 12px;color:#35553c;font:inherit;font-size:12px}
+button:hover{border-color:var(--accent)}
+.table{background:var(--card);border:1px solid #dce2d8;border-radius:13px;overflow:hidden}
+.row{display:grid;grid-template-columns:44px 92px minmax(0,1.1fr) minmax(0,1fr) minmax(0,.7fr);border-top:1px solid var(--line)}
+.row.th{position:sticky;top:0;z-index:2;background:var(--head);color:#fff;border-top:0;font-size:12px;font-weight:700}
+.row.th div{padding:13px 14px}
+.row>div{padding:14px;min-width:0}
+.row+.row>div+div{border-left:1px solid var(--line)}
+.n{font-size:12px;font-weight:750;color:#729171}
+.t{font-size:12px;color:var(--sub)}
+.t button{padding:4px 7px;font-size:11px}
+.ref{font-size:13px;line-height:1.75;cursor:pointer}
+.ref:hover{background:#f7faf4}
+.ko{display:block;font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}
+.mine{font-size:15px;line-height:1.85;word-break:keep-all}
+.mine p{margin:0 0 4px}
+.dropnote{font-size:12px;color:var(--drop);line-height:1.6;margin-top:6px}
+.note{font-size:12px;color:#5f6b5e;line-height:1.7;word-break:keep-all}
+.note .k{display:block;color:#7a5a00}
+.row.add{background:var(--add)}
+.row.add>div:first-child{box-shadow:inset 4px 0 0 var(--addline)}
+.row.playing{background:#eef5ea}
+.row.add.playing{background:#fff0c2}
+footer{max-width:1500px;margin:auto;padding:0 32px 40px;font-size:12px;color:var(--sub);line-height:1.8}
+@media(max-width:900px){
+ .wrap{grid-template-columns:1fr;padding:0 16px 40px}
+ header{padding:24px 16px 14px}
+ .side{position:static;display:grid;grid-template-columns:140px 1fr;gap:14px}
+ .row{grid-template-columns:1fr}
+ .row.th{display:none}
+ .row>div{padding:8px 14px}
+ .row+.row>div+div{border-left:0}
+ .row>div:first-child{padding-top:14px}
+ .row>div:last-child{padding-bottom:14px}
+ footer{padding:0 16px 30px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="eyebrow">YONGTEAM · 1:1 줄 대조 · Y04</div>
+ <h1>[용팀장용 Y04] 클로드에 힉스필드 연결 → 상세페이지 맨 위 상품 영상</h1>
+ <p>레퍼런스 줄을 누르면 왼쪽 영상이 그 시간으로 갑니다. 노란 줄은 레퍼런스에 없는, 새로 넣은 "사업 적용" 구간입니다. <a href="../" style="color:#2d513c">← 5편 목록</a></p><p style="margin-top:6px;color:#7a5a00">레퍼런스는 말 없는 12.7초 영상이라 용팀장 대사가 훨씬 깁니다. 훅 화면(아이콘 + 한 줄)만 빌리고 설명은 새로 썼습니다. 용팀장 확인: 상세페이지 영상을 클로드와 힉스필드로 실제 만들어 봤는지.</p>
+</header>
+<div class="wrap">
+ <aside class="side">
+  <video id="v" controls playsinline preload="metadata" poster="assets/y04.jpg" src="assets/y04.mp4"></video>
+  <div>
+   <div class="meta"><b>@janm_ux · 틱톡 · 12.7초</b><br>평소의 97.3배 · 조회 43.3만<br>원문: 내레이션 없음 · 화면 글자와 장면<br><a href="https://www.tiktok.com/@janm_ux/video/7705833608929381654" target="_blank" rel="noopener">원본 게시물 ↗</a></div>
+   <div class="meta"><b>왜 터졌나</b><br>말 없이 "클로드 + 힉스필드 = 불" 한 줄과 저절로 채워지는 편집 화면만으로 궁금증을 만든다. 12초라 다시 보게 됨. 무료 체험 캡션이 즉시 보상.</div>
+   <div class="legend"><span class="chip">대응 줄</span><span class="chip add">새로 넣은 줄</span><span class="chip drop">버린 내용</span></div>
+   <div class="tools"><button id="copy">용팀장 대사만 복사</button></div>
+  </div>
+ </aside>
+ <section class="table" id="tbl">
+  <div class="row th"><div>#</div><div>시간</div><div>레퍼런스 원문 · 번역</div><div>용팀장 대사</div><div>화면 · 확인</div></div>
+<div class="row" data-s="0" data-e="9.5"><div class="n">1</div><div class="t"><button>0:00–0:10</button></div><div class="ref">[화면 글자] Fable 5.2 + Higgsfield MCP = 🔥<span class="ko">책상 위 모니터 속 영상 편집 타임라인이 저절로 채워지는 장면을 손으로 찍음</span></div><div class="mine"><p>클로드에 영상 도구를 연결하면, 대화창에서 영상이 나옵니다.</p><p>힉스필드라는 영상 도구를 클로드에 붙이는 겁니다.</p><p>그러면 여러 영상 모델을 클로드 안에서 골라 씁니다.</p><p>사진 한 장 주고 말로 시키면 됩니다.</p><div class="dropnote">버림: 편집 타임라인 시연, 무료 체험 조건</div></div><div class="note">클로드 아이콘 + 힉스필드 아이콘, 아래 "클로드 + 힉스필드 = 상세페이지 영상" → 상품 사진 한 장 올리고 돌아가는 영상 요청 → 결과<span class="k">확인 필요</span>촬영 시점 요금과 무료 조건</div></div>
+<div class="row add"><div class="n">★</div><div class="t">새로 넣음</div><div class="ref" style="cursor:default;color:var(--sub)">(레퍼런스에 없음)</div><div class="mine"><p>이걸 사업에 적용하는 방법도 알려드릴게요.</p><p>저는 이걸 상세페이지에 씁니다.</p><p>중국 원본 상세는 사진만 길게 이어지죠.</p><p>여기에 상품이 돌아가는 짧은 영상 하나를 맨 위에 넣습니다.</p><p>단, 원본 사진에서 출발해야 합니다.</p><p>상품에 없는 기능이 영상에 나오면 매출이 아니라 반품이 올라갑니다.</p><p>AI는 영상 초안을 만들고, 실제 상품과 같은지는 사람이 봅니다.</p></div><div class="note">중국 원본 상세 vs 영상이 들어간 상세<span class="k">용팀장 확인</span>상세 맨 위에 넣는지, 스마트스토어 상세 영상 규격</div></div>
+<div class="row" data-s="9.5" data-e="12.7"><div class="n">2</div><div class="t"><button>0:10–0:13</button></div><div class="ref">[화면 글자] Link in caption for the link<span class="ko">캡션에 링크 있음</span></div><div class="mine"><p>클로드에 영상 도구 붙이는 순서, 아무 댓글이나 남겨 주시면 DM으로 PDF 보내드릴게요.</p></div><div class="note"><span class="k">확정 2026-11-16</span>인포크 링크의 PDF를 DM으로</div></div>
+ </section>
+</div>
+<footer>용팀장 대사 약 359자 · 약 72초(1초≈5자) · 레퍼런스 12.7초. 전체 1:1 원본: 용팀장 레포 02-planning/ai-explain-to-business-bench_v1.md</footer>
+<script>
+const v=document.getElementById('v');
+const rows=[...document.querySelectorAll('.row[data-s]')];
+rows.forEach(r=>{
+ const go=()=>{v.currentTime=parseFloat(r.dataset.s);v.play().catch(()=>{});if(innerWidth<900)v.scrollIntoView({behavior:'smooth',block:'center'});};
+ r.querySelector('.ref').addEventListener('click',go);
+ r.querySelector('.t button').addEventListener('click',go);
+});
+v.addEventListener('timeupdate',()=>{
+ const t=v.currentTime;
+ rows.forEach(r=>r.classList.toggle('playing',t>=parseFloat(r.dataset.s)&&t<parseFloat(r.dataset.e)));
+});
+document.getElementById('copy').addEventListener('click',async e=>{
+ const txt=[...document.querySelectorAll('.mine p')].map(p=>p.textContent).join('\n');
+ try{await navigator.clipboard.writeText(txt);e.target.textContent='복사했어요';}catch(_){e.target.textContent='복사 실패';}
+ setTimeout(()=>e.target.textContent='용팀장 대사만 복사',1600);
+});
+</script>
+</body>
+</html>

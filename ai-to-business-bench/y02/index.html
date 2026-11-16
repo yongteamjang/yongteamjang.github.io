@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>용팀장 Y02 줄 대조</title>
+<style>
+:root{--bg:#f3f2ee;--card:#fff;--ink:#222b25;--sub:#748074;--line:#e4e8df;--head:#294935;--accent:#2d513c;--add:#fff6dc;--addline:#e9c85c;--drop:#9a6b5b;--chip:#ecf3e6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif}
+header{max-width:1500px;margin:auto;padding:36px 32px 20px}
+.eyebrow{font-size:11px;letter-spacing:3px;color:#64836a}
+h1{font-size:28px;letter-spacing:-1px;margin:10px 0 8px}
+header p{font-size:13px;color:var(--sub);line-height:1.8;margin:0}
+.wrap{max-width:1500px;margin:auto;padding:0 32px 60px;display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:start}
+.side{position:sticky;top:16px;background:var(--card);border:1px solid #dce2d8;border-radius:13px;padding:18px}
+video{display:block;width:100%;aspect-ratio:9/16;object-fit:contain;background:#141914;border-radius:10px}
+.meta{font-size:12px;color:var(--sub);line-height:1.7;margin-top:12px}
+.meta b{color:var(--ink)}
+.side a{color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{font-size:11px;padding:4px 8px;border-radius:20px;background:var(--chip);color:#4f7050}
+.chip.add{background:var(--add);color:#7a5a00}
+.chip.drop{background:#f6ebe6;color:var(--drop)}
+.tools{display:flex;gap:8px;margin:14px 0 0}
+button{cursor:pointer;background:#fff;border:1px solid #d7dfd5;border-radius:7px;padding:8px 12px;color:#35553c;font:inherit;font-size:12px}
+button:hover{border-color:var(--accent)}
+.table{background:var(--card);border:1px solid #dce2d8;border-radius:13px;overflow:hidden}
+.row{display:grid;grid-template-columns:44px 92px minmax(0,1.1fr) minmax(0,1fr) minmax(0,.7fr);border-top:1px solid var(--line)}
+.row.th{position:sticky;top:0;z-index:2;background:var(--head);color:#fff;border-top:0;font-size:12px;font-weight:700}
+.row.th div{padding:13px 14px}
+.row>div{padding:14px;min-width:0}
+.row+.row>div+div{border-left:1px solid var(--line)}
+.n{font-size:12px;font-weight:750;color:#729171}
+.t{font-size:12px;color:var(--sub)}
+.t button{padding:4px 7px;font-size:11px}
+.ref{font-size:13px;line-height:1.75;cursor:pointer}
+.ref:hover{background:#f7faf4}
+.ko{display:block;font-size:12px;color:var(--sub);margin-top:6px;line-height:1.6}
+.mine{font-size:15px;line-height:1.85;word-break:keep-all}
+.mine p{margin:0 0 4px}
+.dropnote{font-size:12px;color:var(--drop);line-height:1.6;margin-top:6px}
+.note{font-size:12px;color:#5f6b5e;line-height:1.7;word-break:keep-all}
+.note .k{display:block;color:#7a5a00}
+.row.add{background:var(--add)}
+.row.add>div:first-child{box-shadow:inset 4px 0 0 var(--addline)}
+.row.playing{background:#eef5ea}
+.row.add.playing{background:#fff0c2}
+footer{max-width:1500px;margin:auto;padding:0 32px 40px;font-size:12px;color:var(--sub);line-height:1.8}
+@media(max-width:900px){
+ .wrap{grid-template-columns:1fr;padding:0 16px 40px}
+ header{padding:24px 16px 14px}
+ .side{position:static;display:grid;grid-template-columns:140px 1fr;gap:14px}
+ .row{grid-template-columns:1fr}
+ .row.th{display:none}
+ .row>div{padding:8px 14px}
+ .row+.row>div+div{border-left:0}
+ .row>div:first-child{padding-top:14px}
+ .row>div:last-child{padding-bottom:14px}
+ footer{padding:0 16px 30px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="eyebrow">YONGTEAM · 1:1 줄 대조 · Y02</div>
+ <h1>[용팀장용 Y02] 컴퓨터 안 켜고 폰으로 AI 직원 확인 → 디스코드 상품 초안</h1>
+ <p>레퍼런스 줄을 누르면 왼쪽 영상이 그 시간으로 갑니다. 노란 줄은 레퍼런스에 없는, 새로 넣은 "사업 적용" 구간입니다. <a href="../" style="color:#2d513c">← 5편 목록</a></p>
+</header>
+<div class="wrap">
+ <aside class="side">
+  <video id="v" controls playsinline preload="metadata" poster="assets/y02.jpg" src="assets/y02.mp4"></video>
+  <div>
+   <div class="meta"><b>@seon_hj · 인스타 · 31.9초</b><br>평소의 28배 · 조회 2만 · 댓글 1,508<br>원문: 한국어 내레이션 받아쓰기<br><a href="https://www.instagram.com/reel/Dfs-fuuuqEV/" target="_blank" rel="noopener">원본 게시물 ↗</a></div>
+   <div class="meta"><b>왜 터졌나</b><br>"AI가 아침마다 카톡을 보낸다"는 생활 장면 하나로 시작해 한 달 → 주간 → 하루로 눌러 들어가는 화면을 보여 줌. 댓글 키워드 응답 1,508개.</div>
+   <div class="legend"><span class="chip">대응 줄</span><span class="chip add">새로 넣은 줄</span><span class="chip drop">버린 내용</span></div>
+   <div class="tools"><button id="copy">용팀장 대사만 복사</button></div>
+  </div>
+ </aside>
+ <section class="table" id="tbl">
+  <div class="row th"><div>#</div><div>시간</div><div>레퍼런스 원문</div><div>용팀장 대사</div><div>화면 · 확인</div></div>
+<div class="row" data-s="0" data-e="4.4"><div class="n">1</div><div class="t"><button>0:00–0:04</button></div><div class="ref">제 클로드가 아침마다 카톡을 보내요.</div><div class="mine"><p>저는 컴퓨터 안 켜고 폰으로 AI 직원 일을 확인합니다.</p></div><div class="note">휴대폰 디스코드 화면, 노트북은 닫혀 있음</div></div>
+<div class="row" data-s="4.4" data-e="11.2"><div class="n">2</div><div class="t"><button>0:04–0:11</button></div><div class="ref">클로드랑 카톡을 합쳤거든요. 자동화 작업이 제때 돌았는지 카톡으로 보고받아요.</div><div class="mine"><p>AI를 메신저에 붙이면 이게 됩니다.</p><p>폰에서 말만 걸면 AI가 일을 받아요.</p><p>일이 끝나면 결과가 메신저로 옵니다.</p><div class="dropnote">버림: 카톡 연동 방법</div></div><div class="note"><span class="k">용팀장 확인</span>디스코드 AI 직원이 끝나면 알림을 주는지</div></div>
+<div class="row" data-s="11.2" data-e="21.7"><div class="n">3</div><div class="t"><button>0:11–0:22</button></div><div class="ref">버튼 하나 누르면 한 달 일정이 다 나와요. 한 달을 누르면 주간, 주간을 누르면 하루까지. 뭐가 끝났고 뭐가 예정인지 다 보여요.</div><div class="mine"><p>저는 화면만 보고 확인하면 됩니다.</p><div class="dropnote">버림: 한 달·주간·하루 일정판(용팀장이 안 쓰는 기능)</div></div><div class="note"></div></div>
+<div class="row" data-s="21.7" data-e="26.7"><div class="n">4</div><div class="t"><button>0:22–0:27</button></div><div class="ref">컴퓨터 안 켜도 클로드가 일 잘하고 있는지 폰으로 확인해요.</div><div class="mine"><div class="dropnote">대사 없음 · 훅에서 이미 말함</div></div><div class="note"></div></div>
+<div class="row add"><div class="n">★</div><div class="t">새로 넣음</div><div class="ref" style="cursor:default;color:var(--sub)">(레퍼런스에 없음)</div><div class="mine"><p>이걸 사업에 적용하는 방법도 알려드릴게요.</p><p>구매대행이면 상품 정보만 던지면 됩니다.</p><p>상품명이랑 옵션 초안이 돌아옵니다.</p><p>저는 그걸 보고 고칠 것만 고칩니다.</p><p>AI가 초안을 만들어도, 마지막 판단은 사람 몫이에요.</p><p>클로드코드보다 세팅 문턱이 낮아서, 처음 하시는 분은 여기부터 해 보시면 됩니다.</p></div><div class="note">휴대폰으로 상품 링크를 디스코드에 던지는 장면 → 상품명, 옵션 초안이 돌아오는 장면</div></div>
+<div class="row" data-s="26.7" data-e="31.9"><div class="n">5</div><div class="t"><button>0:27–0:32</button></div><div class="ref">어떻게 만들었는지 궁금하면 댓글에 일정판 (남겨 주세요).</div><div class="mine"><p>세팅 순서가 궁금하시면 아무 댓글이나 남겨 주세요.</p><p>DM으로 PDF 보내드릴게요.</p></div><div class="note">얼굴<span class="k">확정 2026-11-16</span>인포크 링크의 PDF를 DM으로</div></div>
+ </section>
+</div>
+<footer>용팀장 대사 약 326자 · 약 65초(1초≈5자) · 레퍼런스 31.9초. 전체 1:1 원본: 용팀장 레포 02-planning/ai-explain-to-business-bench_v1.md</footer>
+<script>
+const v=document.getElementById('v');
+const rows=[...document.querySelectorAll('.row[data-s]')];
+rows.forEach(r=>{
+ const go=()=>{v.currentTime=parseFloat(r.dataset.s);v.play().catch(()=>{});if(innerWidth<900)v.scrollIntoView({behavior:'smooth',block:'center'});};
+ r.querySelector('.ref').addEventListener('click',go);
+ r.querySelector('.t button').addEventListener('click',go);
+});
+v.addEventListener('timeupdate',()=>{
+ const t=v.currentTime;
+ rows.forEach(r=>r.classList.toggle('playing',t>=parseFloat(r.dataset.s)&&t<parseFloat(r.dataset.e)));
+});
+document.getElementById('copy').addEventListener('click',async e=>{
+ const txt=[...document.querySelectorAll('.mine p')].map(p=>p.textContent).join('\n');
+ try{await navigator.clipboard.writeText(txt);e.target.textContent='복사했어요';}catch(_){e.target.textContent='복사 실패';}
+ setTimeout(()=>e.target.textContent='용팀장 대사만 복사',1600);
+});
+</script>
+</body>
+</html>
