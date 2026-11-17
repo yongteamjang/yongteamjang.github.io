@@ -169,18 +169,19 @@ footer a{color:var(--accent)}
 <footer>전체 1:1 원본: 용팀장 레포 02-planning/ai-explain-to-business-bench_v1.md · 예전 3칸판: <a href="blocks/">blocks/</a></footer>
 <script>
 document.querySelectorAll('.ep').forEach(ep=>{
- const v=ep.querySelector('video');
+ ep.querySelector('.copy').addEventListener('click',async e=>{
+  const txt=[...ep.querySelectorAll('.mine p')].map(p=>p.textContent).join('\n');
+  try{await navigator.clipboard.writeText(txt);e.target.textContent='복사했어요';}catch(_){e.target.textContent='복사 실패';}
+  setTimeout(()=>e.target.textContent='용팀장 대사 복사',1600);
+ });
+ const v=ep.querySelector('video'); if(!v) return;
  const rows=[...ep.querySelectorAll('.r[data-s]')];
  rows.forEach(r=>{
   const go=()=>{document.querySelectorAll('video').forEach(o=>{if(o!==v)o.pause();});v.currentTime=parseFloat(r.dataset.s);v.play().catch(()=>{});if(innerWidth<900)v.scrollIntoView({behavior:'smooth',block:'center'});};
   r.querySelector('.ref').addEventListener('click',go);
  });
  v.addEventListener('timeupdate',()=>{const t=v.currentTime;rows.forEach(r=>r.classList.toggle('playing',t>=parseFloat(r.dataset.s)&&t<parseFloat(r.dataset.e)));});
- ep.querySelector('.copy').addEventListener('click',async e=>{
-  const txt=[...ep.querySelectorAll('.mine p')].map(p=>p.textContent).join('\n');
-  try{await navigator.clipboard.writeText(txt);e.target.textContent='복사했어요';}catch(_){e.target.textContent='복사 실패';}
-  setTimeout(()=>e.target.textContent='용팀장 대사 복사',1600);
- });
+
 });
 </script>
 </body>
