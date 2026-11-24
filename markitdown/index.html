@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클로드에 PDF 올리기 전, 마크잇다운 | 용감한 용팀장</title>
+<meta name="description" content="공급사 카탈로그 PDF를 마크잇다운으로 글(.md)로 바꿔 클로드에 올리는 법. 설치 명령어, 변환 명령어 4줄, 카탈로그 요청 문장, 원본 대조 체크 5가지. 용감한 용팀장 무료 자료.">
+<meta property="og:title" content="클로드에 PDF 올리기 전, 마크잇다운으로 먼저">
+<meta property="og:description" content="설치 명령어 · 변환 명령어 4줄 · 카탈로그 요청 문장 · 대조 체크 5가지 · 용감한 용팀장 무료 자료">
+<style>
+:root{--bg:#f8f6f2;--panel:#fff;--ink:#2a2620;--sub:#6b6458;--line:#e6e1d8;--accent:#514733;--accent-ink:#fff;--soft:#efeae1}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15130f;--panel:#1e1b16;--ink:#ece6da;--sub:#a59d8f;--line:#332e26;--accent:#c9b48a;--accent-ink:#1a160f;--soft:#26221b}}
+:root[data-theme="dark"]{--bg:#15130f;--panel:#1e1b16;--ink:#ece6da;--sub:#a59d8f;--line:#332e26;--accent:#c9b48a;--accent-ink:#1a160f;--soft:#26221b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:32px 16px 72px}
+.kicker{font-size:12px;letter-spacing:.14em;color:var(--sub);font-weight:700}
+h1{font-size:32px;line-height:1.25;margin:6px 0 10px}
+h2{font-size:22px;margin:44px 0 12px;padding-top:18px;border-top:1px solid var(--line)}
+p{margin:6px 0}
+.sub{color:var(--sub)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-size:15px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+nav a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--panel);padding:4px 10px;border-radius:999px}
+ol.steps{padding-left:0;list-style:none;counter-reset:s;margin:0}
+ol.steps li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 52px;margin:8px 0;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--panel);border:1px solid var(--line);font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{font-size:13px;color:var(--sub)}
+.note{background:var(--soft);border-radius:10px;padding:10px 14px;font-size:15px}
+.prompt{position:relative}
+pre{white-space:pre-wrap;word-break:keep-all;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;font:14px/1.7 ui-monospace,"SF Mono",Menlo,"Apple SD Gothic Neo",monospace;max-height:520px;overflow:auto;margin:10px 0 0}
+.copy{position:sticky;top:8px;float:right;margin:0 0 8px 8px}
+.check li{list-style:none;margin:6px 0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.check{padding:0}
+.check label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.check input{margin-top:5px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+.check b{display:block}
+.check span{color:var(--sub);font-size:14px}
+.pair{display:grid;grid-template-columns:1fr 1.6fr;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:8px 0}
+.pair div{padding:10px 14px}
+.pair .bad{background:var(--soft);color:var(--sub);text-decoration:line-through}
+@media (max-width:560px){.pair{grid-template-columns:1fr}}
+footer{margin-top:48px;color:var(--sub);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+footer a{color:var(--ink)}
+.pro{font-weight:800;color:var(--accent)}.noob{font-weight:800;color:var(--sub)}h3{font-size:16px;margin:22px 0 0}</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker">FREE RESOURCE · 용감한 용팀장</div>
+<h1>클로드에 PDF 올리기 전,<br>마크잇다운으로 먼저</h1>
+<p class="sub">공급사 카탈로그 PDF를 글로 바꿔서, 필요한 것만 표로 뽑는 순서예요. 릴스 「클로드에 PDF, 그냥 올리지 마세요」 정리본입니다.</p>
+<div class="btns">
+  <a class="btn" href="markitdown.pdf" download>PDF 전체 받기 (7쪽)</a>
+  <a class="btn ghost" href="#ask">요청 문장 바로 복사</a>
+</div>
+<nav><a href="#why">왜 바꾸나</a><a href="#install">설치</a><a href="#convert">변환</a><a href="#ask">요청 문장</a><a href="#check">대조 체크</a><a href="https://open.kakao.com/o/gcjQ8Hpi" target="_blank" rel="noopener">용팀장 단톡방</a></nav>
+
+<h2 id="why">PDF를 그대로 올리면 생기는 일</h2>
+<p>PDF를 올리면 클로드는 글만 읽지 않아요. <b>페이지 배치, 사진, 머리말, 빈 표 칸</b>까지 같이 처리합니다. 카탈로그처럼 쪽수가 많을수록 토큰을 더 쓰고, 정작 필요한 단가나 금지 문구를 놓칠 수 있어요.</p>
+<ol class="steps">
+<li><b>공급사 카탈로그.pdf</b></li>
+<li><b>마크잇다운으로 변환</b><br>마이크로소프트가 공개한 도구. PDF, 워드, 파워포인트, 엑셀을 AI가 읽기 편한 마크다운 글로 바꿔 줘요</li>
+<li><b>글만 남은 카탈로그.md</b><br>제목과 표가 글로 정리돼 있어서 클로드가 바로 알아봐요</li>
+<li><b>클로드가 필요한 것만 표로</b></li>
+</ol>
+<p class="note">변환한 글과 클로드가 만든 표는 <b>초안</b>이에요. 원본이랑 한 번 대조하는 건 사람 몫입니다.</p>
+
+<h2 id="install">설치는 한 줄</h2>
+<p>맥은 '터미널', 윈도우는 'PowerShell'을 열고 붙여 넣으세요.</p>
+<div class="prompt"><h3>1. 파이썬 버전 확인</h3><button class="btn ghost copy" data-i="0">복사</button><pre id="p0">python3 --version</pre></div>
+<p class="sub"><b>3.10 이상</b>이어야 설치돼요. 맥 기본 파이썬은 3.9인 경우가 있어서, 그러면 python.org에서 새 버전을 먼저 받으세요.</p>
+<div class="prompt"><h3>2. 마크잇다운 설치</h3><button class="btn ghost copy" data-i="1">복사</button><pre id="p1">pip install 'markitdown[all]'</pre></div>
+<p class="sub">윈도우에서 따옴표 때문에 막히면 <code>pip install "markitdown[all]"</code>로 바꿔 보세요.</p>
+<div class="prompt"><h3>터미널이 낯설면 · 클로드코드에 이렇게</h3><button class="btn ghost copy" data-i="2">복사</button><pre id="p2">내 컴퓨터에 마이크로소프트 마크잇다운(markitdown)을 설치해 줘. 파이썬 버전이 낮으면 먼저 알려 주고, 설치가 끝나면 잘 됐는지 확인까지 해 줘.</pre></div>
+
+<h2 id="convert">파일 종류별 변환 명령어 4줄</h2>
+<p>파일이 있는 폴더에서 실행하세요. 앞이 원본 파일, <code>-o</code> 뒤가 새로 만들어질 .md 파일이에요.</p>
+<div class="prompt"><h3>변환 명령어</h3><button class="btn ghost copy" data-i="3">복사</button><pre id="p3">markitdown 카탈로그.pdf -o 카탈로그.md
+markitdown 견적서.docx -o 견적서.md
+markitdown 상품소개.pptx -o 상품소개.md
+markitdown 단가표.xlsx -o 단가표.md</pre></div>
+<p class="note"><b>변환하고 바로 열어 보세요.</b> 사진으로 찍어서 만든 스캔본 PDF는 글자가 거의 안 나올 수 있어요. .md 파일에 글자가 비어 있으면 그 PDF는 이 방법이 안 맞는 파일입니다.</p>
+<div class="prompt"><h3>클로드코드에 시킬 때</h3><button class="btn ghost copy" data-i="4">복사</button><pre id="p4">이 폴더에 있는 PDF를 전부 마크잇다운으로 .md 파일로 바꿔 줘. 끝나면 파일마다 글자가 제대로 나왔는지 알려 줘.</pre></div>
+
+<h2 id="ask">카탈로그 요청 문장</h2>
+<p>변환한 카탈로그.md를 클로드에 올리고 그대로 붙여 넣으세요.</p>
+<div class="prompt"><h3>요청 문장 원문</h3><button class="btn ghost copy" data-i="5">복사</button><pre id="p5">첨부한 공급사 카탈로그에서 아래 두 가지만 표로 뽑아 줘.
+1. 판매 금지 문구: 상품명이나 상세페이지에 쓰면 안 된다고 적힌 문구를 원문 그대로, 몇 쪽에 있었는지와 같이.
+2. 옵션별 단가: 상품명, 옵션명, 단가, 최소 주문 수량, 통화 단위.
+카탈로그에 없는 내용은 지어내지 말고 '없음'이라고 써 줘. 숫자가 애매하면 추측하지 말고 '확인 필요'라고 표시해 줘.</pre></div>
+<p class="sub">표가 나오면 "이 표를 엑셀 파일로 만들어 줘"라고 이어서 말하면 다음 상품 등록 때 바로 씁니다.</p>
+
+<h2 id="check">원본이랑 대조하는 체크 5가지</h2>
+<p class="sub">AI도 새는 게 있어서, 사람이 한 번 더 거릅니다.</p>
+<ul class="check">
+<li><label><input type="checkbox"><div><b>단가 숫자</b><span>표의 단가를 원본 PDF 그 쪽과 한 줄씩 맞춰 봤나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>통화 단위</b><span>위안, 달러, 원이 섞이지 않았나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>옵션 밀림</b><span>표 칸이 밀려서 옵션과 단가가 엇갈리지 않았나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>금지 문구 누락</b><span>원본에 있는 금지 문구가 표에서 빠지지 않았나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>지어낸 내용</b><span>원본에 없는 숫자나 문구가 들어가지 않았나</span></div></label></li>
+</ul>
+<p class="note"><b>하나라도 걸리면</b> 그 줄은 원본 숫자로 고쳐서 쓰세요. 틀린 단가로 등록하면 마진이 어긋나고, 빠진 금지 문구는 판매중지로 돌아올 수 있어요.</p>
+
+<footer>
+<p>AI는 초안, 판단은 사람입니다. 마크잇다운이 글로 바꾸고, 클로드가 표 초안을 만들고, 사람이 원본이랑 대조해서 씁니다.</p>
+<p>무료 배포 자료 · 재판매 금지 · <a href="https://open.kakao.com/o/gcjQ8Hpi" target="_blank" rel="noopener">용팀장 단톡방</a></p>
+</footer>
+</div>
+<script>
+document.querySelectorAll('.copy').forEach(function (b) {
+  b.addEventListener('click', async function () {
+    const el = document.getElementById('p' + b.dataset.i);
+    try { await navigator.clipboard.writeText(el.innerText); b.textContent = '복사됨!'; }
+    catch (err) { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = '선택됨'; }
+    setTimeout(function () { b.textContent = '복사'; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
