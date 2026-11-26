@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>챗GPT 세팅 3개 | 용감한 용팀장</title>
+<meta name="description" content="챗GPT 컴퓨터 사용·브라우저·연결 세팅 3개를 화면 순서대로. 켜기 전·후 확인 체크 5가지. 용감한 용팀장 무료 자료.">
+<meta property="og:title" content="챗GPT 쓰시죠? 이 세팅 3개부터">
+<meta property="og:description" content="컴퓨터 사용 · 브라우저 · 연결 · 확인 체크 5가지 · 용감한 용팀장 무료 자료">
+<style>
+:root{--bg:#f8f6f2;--panel:#fff;--ink:#2a2620;--sub:#6b6458;--line:#e6e1d8;--accent:#514733;--accent-ink:#fff;--soft:#efeae1}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15130f;--panel:#1e1b16;--ink:#ece6da;--sub:#a59d8f;--line:#332e26;--accent:#c9b48a;--accent-ink:#1a160f;--soft:#26221b}}
+:root[data-theme="dark"]{--bg:#15130f;--panel:#1e1b16;--ink:#ece6da;--sub:#a59d8f;--line:#332e26;--accent:#c9b48a;--accent-ink:#1a160f;--soft:#26221b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:32px 16px 72px}
+.kicker{font-size:12px;letter-spacing:.14em;color:var(--sub);font-weight:700}
+h1{font-size:32px;line-height:1.25;margin:6px 0 10px}
+h2{font-size:22px;margin:44px 0 12px;padding-top:18px;border-top:1px solid var(--line)}
+p{margin:6px 0}
+.sub{color:var(--sub)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:800;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-size:15px}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+nav a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--panel);padding:4px 10px;border-radius:999px}
+ol.steps{padding-left:0;list-style:none;counter-reset:s;margin:0}
+ol.steps li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 52px;margin:8px 0;position:relative}
+ol.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--panel);border:1px solid var(--line);font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{font-size:13px;color:var(--sub)}
+.note{background:var(--soft);border-radius:10px;padding:10px 14px;font-size:15px}
+.prompt{position:relative}
+pre{white-space:pre-wrap;word-break:keep-all;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;font:14px/1.7 ui-monospace,"SF Mono",Menlo,"Apple SD Gothic Neo",monospace;max-height:520px;overflow:auto;margin:10px 0 0}
+.copy{position:sticky;top:8px;float:right;margin:0 0 8px 8px}
+.check li{list-style:none;margin:6px 0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.check{padding:0}
+.check label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.check input{margin-top:5px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+.check b{display:block}
+.check span{color:var(--sub);font-size:14px}
+.pair{display:grid;grid-template-columns:1fr 1.6fr;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:8px 0}
+.pair div{padding:10px 14px}
+.pair .bad{background:var(--soft);color:var(--sub);text-decoration:line-through}
+@media (max-width:560px){.pair{grid-template-columns:1fr}}
+footer{margin-top:48px;color:var(--sub);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+footer a{color:var(--ink)}
+.pro{font-weight:800;color:var(--accent)}.noob{font-weight:800;color:var(--sub)}h3{font-size:16px;margin:22px 0 0}</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker">FREE RESOURCE · 용감한 용팀장</div>
+<h1>챗GPT 쓰시죠?<br>이 세팅 3개부터</h1>
+<p class="sub">켜 두면 챗GPT한테 내 컴퓨터 일, 사이트 일, 밖에서 시키는 일까지 맡길 수 있어요. 릴스 「챗GPT 쓰시죠? 이 세팅 3개부터」 정리본입니다.</p>
+<div class="btns">
+  <a class="btn" href="chatgpt-settings.pdf" download>PDF 전체 받기 (6쪽)</a>
+  <a class="btn ghost" href="#check">확인 체크 바로 보기</a>
+</div>
+<nav><a href="#s1">01 컴퓨터 사용</a><a href="#s2">02 브라우저</a><a href="#s3">03 연결</a><a href="#check">확인 체크</a><a href="https://open.kakao.com/o/gcjQ8Hpi" target="_blank" rel="noopener">용팀장 단톡방</a></nav>
+
+<h2 id="s1">01 컴퓨터 사용 · 쓰는 앱만 켜기</h2>
+<p class="note">챗GPT 앱 › 설정 › 컴퓨터 사용</p>
+<div class="tablewrap"><table>
+<tr><th>앱</th><th>설정</th></tr>
+<tr><td>Google Chrome</td><td><b>켬</b></td></tr>
+<tr><td>Safari</td><td><b>켬</b></td></tr>
+<tr><td>Microsoft Excel</td><td><b>켬</b></td></tr>
+<tr><td>그 밖의 앱</td><td>필요할 때만</td></tr>
+</table></div>
+<p>크롬, 사파리, 엑셀처럼 <b>평소 일에 쓰는 앱만</b> 켜세요. 켜 둔 앱을 챗GPT가 직접 다룰 수 있게 됩니다. 메신저, 메모, 사진처럼 개인 정보가 있는 앱은 꺼 두는 편이 안전해요.</p>
+
+<h2 id="s2">02 브라우저 · 기능 켜고 에이전트 권한 정하기</h2>
+<p class="note">챗GPT 앱 › 설정 › 브라우저</p>
+<ol class="steps">
+<li><b>브라우저 기능 사용 켜기</b></li>
+<li><b>아래 에이전트 권한 바꾸기</b><br>영상에서는 <b>항상 허용</b>. 사이트에 들어가서 하는 일을 중간에 멈추지 않고 이어서 해요. 처음이라 불안하면 <b>매번 묻기</b>로 시작해도 됩니다.</li>
+</ol>
+<p class="note"><b>결제, 삭제, 전송은 꼭 직접 확인하세요.</b> 주문 결제, 상품 삭제, 고객에게 메시지 보내기처럼 되돌리기 어려운 일은 챗GPT가 누르기 전에 사람이 한 번 보고 넘어가야 해요.</p>
+
+<h2 id="s3">03 연결 · 휴대폰이랑 PC 연결하기</h2>
+<p class="note">챗GPT 앱 › 설정 › 연결</p>
+<ol class="steps">
+<li><b>내 휴대폰 연결하기</b><br>휴대폰 챗GPT 앱과 같은 계정으로 로그인돼 있어야 해요.</li>
+<li><b>이 PC를 '제어할 수 있는 기기'로 켜기</b><br>이제 밖에서 폰으로 "엑셀 주문 목록 정리해 줘"처럼 시키면 집이나 사무실 컴퓨터에서 챗GPT가 일을 합니다. 컴퓨터는 켜져 있어야 해요.</li>
+</ol>
+<p class="sub">자리를 비울 땐 컴퓨터 잠금을 걸어 두세요.</p>
+
+<h2 id="check">켜기 전·후 확인 체크 5가지</h2>
+<ul class="check">
+<li><label><input type="checkbox"><div><b>앱은 쓰는 것만</b><span>컴퓨터 사용에서 개인 앱까지 켜 두지 않았나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>결제·삭제·전송</b><span>되돌리기 어려운 일은 누르기 전에 내가 보나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>로그인된 사이트</b><span>스마트스토어·쿠팡 판매자센터처럼 중요한 사이트에서 일을 맡길 땐 처음 몇 번은 옆에서 지켜봤나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>연결된 기기</b><span>내 폰 말고 다른 기기가 연결 목록에 있지 않나</span></div></label></li>
+<li><label><input type="checkbox"><div><b>결과 확인</b><span>챗GPT가 끝냈다고 한 일을 실제 화면에서 한 번 열어 봤나</span></div></label></li>
+</ul>
+<p class="note"><b>메뉴 이름이 다르면</b> 챗GPT 앱을 최신으로 업데이트해 보세요. 메뉴 이름과 위치는 계정·기기·앱 버전에 따라 다를 수 있어요. 그래도 안 보이면 단톡방에 화면을 올려 주세요.</p>
+
+<footer>
+<p>AI는 초안, 마지막 확인은 사람입니다. 쓰는 앱만 켜고, 권한은 정해 두고, 폰이랑 연결하기.</p>
+<p>무료 배포 자료 · 재판매 금지 · <a href="https://open.kakao.com/o/gcjQ8Hpi" target="_blank" rel="noopener">용팀장 단톡방</a></p>
+</footer>
+</div>
+</body>
+</html>
